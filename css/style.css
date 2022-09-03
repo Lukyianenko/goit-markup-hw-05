@@ -16,11 +16,11 @@
     --primery-text-color: #212121;
     --paragraph-text-color: #757575;
     --clients-color: #AFB1B8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
    color: var(--primery-text-color);
-
    font-family: Roboto, sans-serif;
    letter-spacing: 0.03em;
    }
@@ -54,7 +54,6 @@ img {
 
 .logo {
     color: #000000;
-
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -96,6 +95,8 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link:hover, 
@@ -133,12 +134,15 @@ img {
     color: var(--paragraph-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     align-items: center;
+
+    transition: color 250ms var(--timing-function);
 }
 
 .auth-nav .link:hover,
@@ -303,10 +307,6 @@ img {
     }
 
  
-.team-icons .item {
-   
-   }
-
 .team-icons .link {
     display: block;
     color: var(--clients-color);
@@ -314,6 +314,8 @@ img {
     height: 44px;
     padding: 12px 12px;
     border-radius: 50%;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .team-icons .icon {
@@ -358,6 +360,8 @@ img {
     border: 1px solid var(--clients-color);
     border-radius: 4px;
     padding: 16px 32px;
+
+    transition: color 250ms var(--timing-function);
    }
 
 .clients-list .icon {
@@ -404,11 +408,12 @@ img {
 
 .page-footer .link {
        color: rgba(255, 255, 255, 0.6);;
-
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+
+    transition: color 250ms var(--timing-function);
 }
 
 .page-footer .item {
@@ -452,6 +457,8 @@ img {
     padding: 12px 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms var(--timing-function);
     }
 
     .come .icon {
@@ -514,7 +521,9 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .button-filtr.all {
@@ -541,6 +550,8 @@ img {
     display: block;
     text-decoration: none;
    color: inherit;
+
+   transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-works .link:hover,
