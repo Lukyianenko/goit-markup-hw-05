@@ -170,8 +170,6 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-left: 452px;
-    padding-right: 452px;
 }
 
 .overlay {
@@ -189,6 +187,10 @@ img {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
@@ -398,7 +400,7 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
 
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
    }
 
 .clients-list .icon {
@@ -543,11 +545,12 @@ BACKDROUP
     background-color: rgba(0, 0, 0, 0.1);
 
     opacity: 1;
-    transition: opacity 250ms var(--timing-function);
+    transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .backdroup.is-hidden {
         opacity: 0;
+        visibility: hidden;
     pointer-events: none;
 }
 
@@ -618,7 +621,7 @@ transform: translate(-50%, -50%);
     line-height: 1.63;
     letter-spacing: 0.03em;
 
-    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .button-filtr.all {
